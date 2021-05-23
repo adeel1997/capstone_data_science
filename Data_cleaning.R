@@ -1,6 +1,5 @@
 library(stringr);library(dplyr)
 data <- read.delim("Data/earthquakes-2021-05-16_23-42-17_+0530.tsv")
-head(data)
 eq_clean_data <- function(data){
     ## Converting date into date column
     data <- data %>% mutate(date = as.Date(paste0(Year,"-",Mo,"-",Dy),format=
@@ -27,3 +26,4 @@ eq_clean_data <- function(data){
     return(data)
                             
 }
+
