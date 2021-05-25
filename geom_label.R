@@ -1,3 +1,5 @@
+source("geom_timeline.R")
+
 geom_timeline_label <- function(mapping = NULL, data = NULL,
                                 stat = "identity",
                                 position = "identity",
